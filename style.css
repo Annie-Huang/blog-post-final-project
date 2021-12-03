@@ -39,9 +39,24 @@
 }
 
 h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4 {
+  line-height: 1;
+}
+
+body, /* Kevin's solution: adding body, dl, dd, figure in as well. But we don't use h4 and figure in this project */
+h1,
 h2,
 h3,
-p {
+p,
+dl,
+dd,
+figure {
   margin: 0;
 }
 
@@ -55,4 +70,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+}
+
+body {
+  line-height: 1.6;
 }
