@@ -89,7 +89,22 @@ body {
   font-family: var(
     --ff-sans
   ); /* Kevin's solution (he choose it because of Single Blog Post page.) I choose --ff-serif because most of the text is here is in --ff-serif */
+  font-size: var(--fs-400); /* Kevin solution: choose a main font-size */
   color: var(--clr-neutral-900);
+}
+
+/* ///////////////
+  Typography
+  ////////////// */
+
+h1,
+h2,
+h3,
+.text-serif {
+  font-family: var(--ff-serif);
+  font-weight: var(
+    --fw-200
+  ); /* Added by Kevin, Because all headers are --fw-200 */
 }
 
 h1,
@@ -97,14 +112,14 @@ h2,
 .section-subtitle {
   /* Font minimum, preferred and maximum value */
   font-size: clamp(var(--min), var(--val), var(--max));
-  font-weight: var(--fw);
+  /*font-weight: var(--fw);*/
 }
 
 h1 {
   --min: var(--fs-900); /* minimum value */
   --val: 5vw; /* preferred value = 5% viewport width */
   --max: 4.25rem; /* maximum value */
-  --fw: var(--fw-200);
+  /*--fw: var(--fw-200);*/
 }
 
 h2,
@@ -112,7 +127,7 @@ h2,
   --min: var(--fs-600); /* minimum value */
   --val: 5vw; /* preferred value = 5% viewport width */
   --max: var(--fs-900); /* maximum value */
-  --fw: var(--fw-200);
+  /*--fw: var(--fw-200);*/
 }
 
 h2 {
@@ -121,11 +136,11 @@ h2 {
 
 h3 {
   font-size: var(--fs-600);
-  font-weight: var(--fw-200);
+  /*font-weight: var(--fw-200);*/
 }
 
 dt {
-  font-size: var(--fs-400);
+  /*font-size: var(--fs-400);*/
   font-weight: var(--fw-300);
   color: var(--clr-neutral-400);
 }
@@ -133,10 +148,6 @@ dt {
 dd {
   font-size: var(--fs-300);
   font-weight: var(--fw-700);
-}
-
-.text-serif {
-  font-family: var(--ff-serif);
 }
 
 /* ///////////////
