@@ -78,7 +78,7 @@ body {
     --ff-sans
   ); /* Kevin's solution (he choose it because of Single Blog Post page.) I choose --ff-serif because most of the text is here is in --ff-serif */
   font-size: var(--fs-400); /* Kevin solution: choose a main font-size */
-  color: var(--clr-neutral-900);
+  /*color: var(--clr-neutral-900);*/
   padding: 1.5rem;
 }
 
@@ -118,6 +118,10 @@ h3,
   color: var(
     --clr-neutral-400
   ); /* Kevin choose to use .section-title where as me style on h2, all .section-title is in <h2>, but guess Kevin's approach makes better sense */
+}
+
+.section-subtitle {
+  font-size: var(--fs-600);
 }
 
 h1,
