@@ -75,3 +75,83 @@ img {
 body {
   line-height: 1.6;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* ///////////////
+  General styling
+  ////////////// */
+
+body {
+  font-family: var(--ff-serif);
+  color: var(--clr-neutral-900);
+}
+
+h1,
+h2,
+.section-subtitle {
+  /* Font minimum, preferred and maximum value */
+  font-size: clamp(var(--min), var(--val), var(--max));
+  font-weight: var(--fw);
+}
+
+h1 {
+  --min: var(--fs-900); /* minimum value */
+  --val: 5vw; /* preferred value = 5% viewport width */
+  --max: 4.25rem; /* maximum value */
+  --fw: var(--fw-200);
+}
+
+h2,
+.section-subtitle {
+  --min: var(--fs-600); /* minimum value */
+  --val: 5vw; /* preferred value = 5% viewport width */
+  --max: var(--fs-900); /* maximum value */
+  --fw: var(--fw-200);
+}
+
+h2 {
+  color: var(--clr-neutral-400);
+}
+
+h3 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-200);
+}
+
+dt {
+  font-size: var(--fs-400);
+  font-weight: var(--fw-300);
+  color: var(--clr-neutral-400);
+}
+
+dd {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-700);
+}
+
+.text-serif {
+  font-family: var(--ff-serif);
+}
+
+/* ///////////////
+  Individual sections
+  ////////////// */
+
+.article-info {
+  font-family: var(--ff-sans);
+  font-size: var(--fs-200);
+  color: var(--clr-neutral-400);
+}
+
+.primary-footer {
+  font-family: var(--ff-sans);
+}
+
+.primary-footer > div:nth-child(2) {
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
+}
