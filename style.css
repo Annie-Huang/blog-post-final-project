@@ -73,24 +73,17 @@ img {
 }
 
 body {
-  line-height: 1.6;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* ///////////////
-  General styling
-  ////////////// */
-
-body {
+  line-height: 1.4;
   font-family: var(
     --ff-sans
   ); /* Kevin's solution (he choose it because of Single Blog Post page.) I choose --ff-serif because most of the text is here is in --ff-serif */
   font-size: var(--fs-400); /* Kevin solution: choose a main font-size */
   color: var(--clr-neutral-900);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /* ///////////////
