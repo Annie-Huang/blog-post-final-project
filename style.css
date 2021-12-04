@@ -86,7 +86,9 @@ a {
   ////////////// */
 
 body {
-  font-family: var(--ff-serif);
+  font-family: var(
+    --ff-sans
+  ); /* Kevin's solution (he choose it because of Single Blog Post page.) I choose --ff-serif because most of the text is here is in --ff-serif */
   color: var(--clr-neutral-900);
 }
 
@@ -142,13 +144,13 @@ dd {
   ////////////// */
 
 .article-info {
-  font-family: var(--ff-sans);
+  /*font-family: var(--ff-sans);*/
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
 }
 
 .primary-footer {
-  font-family: var(--ff-sans);
+  /*font-family: var(--ff-sans);*/
 }
 
 .primary-footer > div:nth-child(2) {
