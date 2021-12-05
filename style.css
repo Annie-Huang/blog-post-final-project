@@ -132,6 +132,10 @@ h3,
   font-size: var(--fs-600);
 }
 
+.btn {
+  display: inline-block;
+  color: var(--clr-neutral-900);
+}
 dt {
   /*font-size: var(--fs-400);*/
   font-weight: var(--fw-300);
@@ -163,7 +167,10 @@ section {
 }
 
 .flow-content > * + * {
-  margin-top: var(--flow-space, 1rem);
+  margin-top: var(
+    --flow-space,
+    1em
+  ); /* Kevin's solution. Better to it to em rather than rem, so it can be related to the current font size */
 }
 
 header {
