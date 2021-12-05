@@ -237,7 +237,12 @@ img {
   --flow-spacer: 2.5rem;
 }
 
+.article-preview h3 {
+  font-size: var(--fs-500);
+}
+
 .article-info {
+  font-weight: var(--fw-400);
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
 }
