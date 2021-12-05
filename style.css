@@ -169,12 +169,12 @@ section {
 .split {
   display: flex;
   flex-direction: column;
-  gap: var(--flow-space, 2.5rem);
+  gap: var(--flow-spacer, 2.5rem);
 }
 
 .flow-content > * + * {
   margin-top: var(
-    --flow-space,
+    --flow-spacer,
     1em
   ); /* Kevin's solution. Better to it to em rather than rem, so it can be related to the current font size */
 }
@@ -187,8 +187,16 @@ section {
   Individual sections
   ////////////// */
 
+/* Utility classes */
+.intro {
+  /* Use em rather than rem. Because the font of the 2nd <p> is changing from mobile to desktop, the spacing between 1st <p> and 2nd <p> is bigger
+   Where as the "Connect" word doesn't change font size, so the space between "Connect" to 2nd <p> stays the same
+ */
+  --flow-spacer: 2em;
+}
+
 .about {
-  --flow-space: 2.5rem;
+  --flow-spacer: 2.5rem;
 }
 @media (min-width: 40rem) {
   .recent-articles .split {
@@ -197,7 +205,6 @@ section {
 }
 
 .article-info {
-  /*font-family: var(--ff-sans);*/
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
 }
@@ -206,10 +213,6 @@ section {
 }
 .article-info > * + * {
   margin-left: 1rem;
-}
-
-.primary-footer {
-  /*font-family: var(--ff-sans);*/
 }
 
 .primary-footer > div:nth-child(2) {
