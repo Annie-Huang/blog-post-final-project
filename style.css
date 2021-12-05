@@ -169,7 +169,14 @@ section {
 .split {
   display: flex;
   flex-direction: column;
-  gap: var(--flow-spacer, 2.5rem);
+  /*gap: var(--flow-spacer, 2.5rem);*/
+  gap: 2.5rem;
+}
+
+@media (min-width: 40rem) {
+  .split {
+    flex-direction: row;
+  }
 }
 
 .flow-content > * + * {
@@ -197,11 +204,6 @@ section {
 
 .about {
   --flow-spacer: 2.5rem;
-}
-@media (min-width: 40rem) {
-  .recent-articles .split {
-    flex-direction: row;
-  }
 }
 
 .article-info {
