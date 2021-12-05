@@ -78,6 +78,8 @@ img {
   max-width: 100%;
   height: auto;
   display: block;
+
+  border-radius: var(--br);
 }
 
 body {
@@ -195,17 +197,13 @@ section {
   margin-top: 3rem;
 }
 
-img {
-  border-radius: 16px;
-}
-
 /* ///////////////
   Utility classes
   ////////////// */
 
 .bg-primary-300 {
   background-color: var(--clr-primary-300);
-  border-radius: 16px;
+  border-radius: var(--br);
 }
 /* ///////////////
   Individual sections
@@ -217,7 +215,7 @@ img {
   height: 304px;
 
   margin: 0 auto;
-  border-radius: 16px;
+  border-radius: var(--br);
 }
 
 @media (min-width: 40rem) {
