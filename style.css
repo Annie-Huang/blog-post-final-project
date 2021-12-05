@@ -147,6 +147,9 @@ dd {
   General Layout
   ////////////// */
 
+section {
+  padding: 2.5rem 0;
+}
 .container {
   max-width: 50rem;
   margin: 0 auto;
@@ -155,17 +158,40 @@ dd {
 
 .split {
   display: flex;
-  gap: 2.5rem;
+  flex-direction: column;
+  gap: var(--flow-space, 2.5rem);
 }
 
+.flow-content > * + * {
+  margin-top: var(--flow-space, 1rem);
+}
+
+header {
+  margin-bottom: 5rem;
+}
 /* ///////////////
   Individual sections
   ////////////// */
+
+.about {
+  --flow-space: 2.5rem;
+}
+@media (min-width: 40rem) {
+  .recent-articles .split {
+    flex-direction: row;
+  }
+}
 
 .article-info {
   /*font-family: var(--ff-sans);*/
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
+}
+.article-info > * {
+  display: inline-block;
+}
+.article-info > * + * {
+  margin-left: 1rem;
 }
 
 .primary-footer {
