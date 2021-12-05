@@ -173,6 +173,10 @@ section {
   gap: 2.5rem;
 }
 
+.split > * {
+  flex-basis: 100%;
+}
+
 @media (min-width: 40rem) {
   .split {
     flex-direction: row;
