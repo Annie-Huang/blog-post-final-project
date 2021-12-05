@@ -132,30 +132,6 @@ h3,
   font-size: var(--fs-600);
 }
 
-/*h1,*/
-/*h2,*/
-/*.section-subtitle {*/
-/*  !* Font minimum, preferred and maximum value *!*/
-/*  font-size: clamp(var(--min), var(--val), var(--max));*/
-/*}*/
-
-/*h1 {*/
-/*  --min: var(--fs-900); !* minimum value *!*/
-/*  --val: 5vw; !* preferred value = 5% viewport width *!*/
-/*  --max: 4.25rem; !* maximum value *!*/
-/*}*/
-
-/*h2,*/
-/*.section-subtitle {*/
-/*  --min: var(--fs-600); !* minimum value *!*/
-/*  --val: 5vw; !* preferred value = 5% viewport width *!*/
-/*  --max: var(--fs-900); !* maximum value *!*/
-/*}*/
-
-/*h3 {*/
-/*  font-size: var(--fs-600);*/
-/*}*/
-
 dt {
   /*font-size: var(--fs-400);*/
   font-weight: var(--fw-300);
@@ -174,7 +150,12 @@ dd {
 .container {
   max-width: 50rem;
   margin: 0 auto;
-  /* padding is set in the body arleady */
+  /* padding is set in the body already */
+}
+
+.split {
+  display: flex;
+  gap: 2.5rem;
 }
 
 /* ///////////////
