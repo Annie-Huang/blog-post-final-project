@@ -151,6 +151,7 @@ dd {
   ////////////// */
 
 section {
+  border-radius: 16px;
   padding: 2.5rem 0;
 }
 
@@ -163,7 +164,7 @@ section {
 .container {
   max-width: 50rem;
   margin: 0 auto;
-  /* padding is set in the body already */
+  padding: 0 1rem;
 }
 
 .split {
@@ -195,6 +196,13 @@ section {
   margin-top: 3rem;
 }
 
+/* ///////////////
+  Utility classes
+  ////////////// */
+
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+}
 /* ///////////////
   Individual sections
   ////////////// */
