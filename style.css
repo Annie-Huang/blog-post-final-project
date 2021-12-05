@@ -170,7 +170,7 @@ section {
   display: flex;
   flex-direction: column;
   /*gap: var(--flow-spacer, 2.5rem);*/
-  gap: 2.5rem;
+  gap: 4rem;
 }
 
 .split > * {
@@ -180,6 +180,7 @@ section {
 @media (min-width: 40rem) {
   .split {
     flex-direction: row;
+    gap: 2.5rem;
   }
 }
 
