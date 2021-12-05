@@ -152,8 +152,16 @@ dd {
   ////////////// */
 
 section {
-  padding: 2.5rem 0;
+  /*padding: 2.5rem 0;*/
+  padding: 2.5rem;
 }
+
+@media (min-width: 40rem) {
+  section {
+    padding: 3.5rem;
+  }
+}
+
 .container {
   max-width: 50rem;
   margin: 0 auto;
