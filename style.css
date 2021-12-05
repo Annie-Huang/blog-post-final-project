@@ -241,7 +241,7 @@ img {
   font-size: var(--fs-500);
 }
 
-.article-info {
+.article-preview .info {
   font-weight: var(--fw-400);
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
