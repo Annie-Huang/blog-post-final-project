@@ -137,6 +137,21 @@ h3,
 .btn {
   display: inline-block;
   color: var(--clr-neutral-900);
+  font-weight: var(--fw-700);
+  border: 0;
+  background: var(--clr-neutral-100);
+  padding: 0 16px 0 0;
+  position: relative;
+  width: max-content;
+}
+.btn::after {
+  position: absolute;
+  font-weight: var(--fw-200);
+  color: var(--clr-neutral-500);
+
+  content: '>';
+  top: 1px;
+  right: 0;
 }
 
 dt {
@@ -261,10 +276,13 @@ section {
   gap: 1.5rem;
   --flow-spacer: 0.5rem;
   margin-top: 1.5rem;
+
+  align-items: flex-start;
 }
 @media (min-width: 40rem) {
   .newsletter.split {
     margin-top: 2.5rem;
+    align-items: center;
   }
 }
 
