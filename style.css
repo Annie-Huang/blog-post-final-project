@@ -257,6 +257,31 @@ section {
   gap: 2em;
 }
 
+.newsletter.split {
+  gap: 1.5rem;
+  --flow-spacer: 0.5rem;
+  margin-top: 1.5rem;
+}
+@media (min-width: 40rem) {
+  .newsletter.split {
+    margin-top: 2.5rem;
+  }
+}
+
+.newsletter label {
+  display: block;
+  font-size: var(--fs-200);
+}
+.newsletter input {
+  font-size: var(--fs-400);
+  color: var(--clr-neutral-300);
+  border: none;
+  border-bottom: 1px solid;
+}
+.newsletter input:focus {
+  outline: none;
+}
+
 .primary-footer > div:nth-child(2) {
   font-size: var(--fs-300);
   font-weight: var(--fw-400);
