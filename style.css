@@ -138,6 +138,7 @@ h3,
   display: inline-block;
   color: var(--clr-neutral-900);
 }
+
 dt {
   font-weight: var(--fw-300);
   color: var(--clr-neutral-400);
@@ -220,7 +221,7 @@ section {
 
 @media (min-width: 40rem) {
   .primary-header {
-    height: 356px;
+    height: 456px;
   }
 }
 
@@ -237,6 +238,14 @@ section {
 
 .article-preview h3 {
   font-size: var(--fs-500);
+}
+
+.article-preview img {
+  object-fit: cover; /* making it cover is just like background-size: cover for background image */
+  /*object-position: center center;    <<<< center center is the default value. it is equavalent to background-position for background image */
+
+  width: 100%; /* To stretch the width in mobile view */
+  height: 12.5rem;
 }
 
 .article-preview .info {
