@@ -332,6 +332,10 @@ section {
   padding: 3em 0;
   margin: 2em 0;
 }
+
+footer {
+  padding-bottom: 1em;
+}
 .footer-nav {
   display: flex;
 }
@@ -343,6 +347,7 @@ section {
 .footer-social {
   display: flex;
   gap: 2em;
+  margin: 0;
 }
 
 .footer-social a {
