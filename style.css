@@ -302,15 +302,19 @@ section {
 
 .call-to-action label {
   display: block;
-  font-size: var(--fs-200);
+  margin-bottom: 0.5em;
+  font-size: var(--fs-300);
+  font-weight: var(--fw-400);
 }
 .call-to-action input {
   width: 100%;
-
-  font-size: var(--fs-400);
-  color: var(--clr-neutral-300);
   border: none;
-  border-bottom: 1px solid;
+  border-bottom: 2px solid var(--clr-neutral-300);
+}
+.call-to-action input::placeholder {
+  color: var(--clr-neutral-300);
+  /* by default the browser usually place the placeholder to a smaller opacity */
+  opacity: 1;
 }
 .call-to-action input:focus {
   outline: none;
