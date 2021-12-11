@@ -99,11 +99,6 @@ body {
   padding: 1.5rem;
 }
 
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
 /* ///////////////
   Typography
   ////////////// */
@@ -115,6 +110,11 @@ h3,
   font-family: var(--ff-serif);
   /* Added by Kevin, Because all headings are --fw-200 */
   font-weight: var(--fw-200);
+}
+
+a {
+  font-weight: var(--fw-700);
+  color: var(--clr-neutral-900);
 }
 
 .text-500 {
@@ -145,7 +145,7 @@ h3,
 
   color: var(--clr-neutral-900);
   font-weight: var(--fw-700);
-  font-size: var(--clr-neutral-300);
+  font-size: var(--fs-300);
   /* force button to be certain font-family */
   font-family: var(--ff-sans);
   border: 0;
@@ -326,17 +326,11 @@ section {
 
 .footer-nav {
   display: flex;
+  font-size: var(--fs-300);
 }
 
 .footer-nav > *:first-child {
   margin-right: 4em;
-}
-
-.footer-nav a {
-  text-decoration: none;
-  font-weight: var(--fw-700);
-  font-size: var(--fs-300);
-  color: var(--clr-neutral-900);
 }
 
 .primary-footer > div:nth-child(2) {
