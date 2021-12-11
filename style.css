@@ -288,6 +288,13 @@ section {
   }
 }
 
+/* It means we want the div within the form to grow when there is space (flex-grow: 1) and we want it to grow at the same rate no matter how big the field (flex-basis: 100%) */
+.call-to-action form > div {
+  flex-basis: 100%; /* auto is the default value. flex-basis: 0  meaning it doesn't have a starting value */
+  flex-shrink: 1;
+  flex-grow: 1; /* 1 is the default value */
+}
+
 .call-to-action label {
   display: block;
   font-size: var(--fs-200);
