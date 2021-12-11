@@ -272,7 +272,9 @@ section {
   gap: 2em;
 }
 
-.newsletter.split {
+/* use .call-to-action form rather than .newsletter.split because call-to-action may have many forms and we want each form looks the same */
+.call-to-action form {
+  display: flex; /* do not use .split as it's not evenly divided */
   gap: 1.5rem;
   --flow-spacer: 0.5rem;
   margin-top: 1.5rem;
@@ -280,23 +282,23 @@ section {
   align-items: flex-start;
 }
 @media (min-width: 40rem) {
-  .newsletter.split {
+  .call-to-action form {
     margin-top: 2.5rem;
     align-items: center;
   }
 }
 
-.newsletter label {
+.call-to-action label {
   display: block;
   font-size: var(--fs-200);
 }
-.newsletter input {
+.call-to-action input {
   font-size: var(--fs-400);
   color: var(--clr-neutral-300);
   border: none;
   border-bottom: 1px solid;
 }
-.newsletter input:focus {
+.call-to-action input:focus {
   outline: none;
 }
 
