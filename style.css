@@ -275,9 +275,9 @@ section {
 /* use .call-to-action form rather than .newsletter.split because call-to-action may have many forms and we want each form looks the same */
 .call-to-action form {
   display: flex; /* do not use .split as it's not evenly divided */
-  gap: 1.5rem;
+  gap: 3rem;
   --flow-spacer: 0.5rem;
-  margin-top: 1.5rem;
+  margin-top: 3rem;
 
   align-items: flex-start;
 }
@@ -300,6 +300,8 @@ section {
   font-size: var(--fs-200);
 }
 .call-to-action input {
+  width: 100%;
+
   font-size: var(--fs-400);
   color: var(--clr-neutral-300);
   border: none;
