@@ -141,22 +141,24 @@ h3,
 
 .btn {
   display: inline-block;
+  cursor: pointer;
+
   color: var(--clr-neutral-900);
   font-weight: var(--fw-700);
+  font-size: var(--clr-neutral-300);
+  /* force button to be certain font-family */
+  font-family: var(--ff-sans);
   border: 0;
-  background: var(--clr-neutral-100);
+  background: none;
   padding: 0 16px 0 0;
-  position: relative;
   width: max-content;
 }
 .btn::after {
-  position: absolute;
-  font-weight: var(--fw-200);
-  color: var(--clr-neutral-500);
+  font-weight: var(--fw-300);
 
-  content: '>';
-  top: 1px;
-  right: 0;
+  /* https://www.toptal.com/designers/htmlarrows/ Use this then you don't need to absolute position things */
+  content: '\203A';
+  margin-left: 1em;
 }
 
 dt {
