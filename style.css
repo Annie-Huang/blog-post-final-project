@@ -282,17 +282,10 @@ section {
 /* use .call-to-action form rather than .newsletter.split because call-to-action may have many forms and we want each form looks the same */
 .call-to-action form {
   display: flex; /* do not use .split as it's not evenly divided */
+  flex-direction: column;
   gap: 3rem;
   --flow-spacer: 0.5rem;
   margin-top: 3rem;
-
-  align-items: flex-start;
-}
-@media (min-width: 40rem) {
-  .call-to-action form {
-    margin-top: 2.5rem;
-    align-items: center;
-  }
 }
 
 /* It means we want the div within the form to grow when there is space (flex-grow: 1) and we want it to grow at the same rate no matter how big the field (flex-basis: 100%) */
@@ -323,6 +316,20 @@ section {
   margin-bottom: 0.5em;
   font-size: var(--fs-300);
   font-weight: var(--fw-400);
+}
+
+.call-to-action button {
+  align-self: flex-start;
+}
+
+@media (min-width: 40rem) {
+  .call-to-action form {
+    flex-direction: row;
+    margin-top: 2.5rem;
+  }
+  .call-to-action button {
+    align-self: center;
+  }
 }
 
 .primary-footer__inner {
