@@ -149,14 +149,15 @@ a:focus {
 .btn {
   display: inline-block;
   cursor: pointer;
+  border: 0;
+  background: none;
 
-  color: var(--clr-neutral-900);
   font-weight: var(--fw-700);
   font-size: var(--fs-300);
   /* force button to be certain font-family */
   font-family: var(--ff-sans);
-  border: 0;
-  background: none;
+  text-decoration: none;
+  color: var(--clr-neutral-900);
 }
 .btn::after {
   font-weight: var(--fw-300);
@@ -233,25 +234,18 @@ section {
   ////////////// */
 
 .primary-header {
+  border-radius: var(--br);
   background: url('img/hero.jpg') center / cover;
   width: 100%;
   height: 304px;
 
   margin: 0 auto;
-  border-radius: var(--br);
 }
 
 @media (min-width: 40rem) {
   .primary-header {
     height: 456px;
   }
-}
-
-.intro {
-  /* Use em rather than rem. Because the font of the 2nd <p> is changing from mobile to desktop, the spacing between 1st <p> and 2nd <p> is bigger
-   Where as the "Connect" word doesn't change font size, so the space between "Connect" to 2nd <p> stays the same
- */
-  --flow-spacer: 2em;
 }
 
 .about {
@@ -266,26 +260,26 @@ section {
   object-fit: cover; /* making it cover is just like background-size: cover for background image */
   /*object-position: center center;    <<<< center center is the default value. it is equavalent to background-position for background image */
 
-  width: 100%; /* To stretch the width in mobile view */
   height: 12.5rem;
+  width: 100%; /* To stretch the width in mobile view */
 }
 
 .article-preview .info {
+  display: flex;
   font-weight: var(--fw-400);
   font-size: var(--fs-200);
   color: var(--clr-neutral-400);
 
-  display: flex;
   gap: 2em;
 }
 
 /* use .call-to-action form rather than .newsletter.split because call-to-action may have many forms and we want each form looks the same */
 .call-to-action form {
+  margin-top: 3rem;
   display: flex; /* do not use .split as it's not evenly divided */
   flex-direction: column;
   gap: 3rem;
   --flow-spacer: 0.5rem;
-  margin-top: 3rem;
 }
 
 /* It means we want the div within the form to grow when there is space (flex-grow: 1) and we want it to grow at the same rate no matter how big the field (flex-basis: 100%) */
@@ -333,7 +327,7 @@ section {
 }
 
 .primary-footer__inner {
-  --border: 1px solid var(--clr-neutral-200);
+  --border: 2px solid var(--clr-neutral-200);
   border-top: var(--border);
   border-bottom: var(--border);
   padding: 3em 0;
@@ -359,4 +353,14 @@ footer {
 
 .footer-social a {
   font-weight: var(--fw-200);
+}
+
+/* ///////////////
+  homepage styles
+  ////////////// */
+.intro {
+  /* Use em rather than rem. Because the font of the 2nd <p> is changing from mobile to desktop, the spacing between 1st <p> and 2nd <p> is bigger
+   Where as the "Connect" word doesn't change font size, so the space between "Connect" to 2nd <p> stays the same
+ */
+  --flow-spacer: 2em;
 }
