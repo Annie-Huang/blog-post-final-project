@@ -260,11 +260,16 @@ section {
   display: flex;
   justify-content: space-around;
   margin: 0;
-  padding: 0.5em 0;
+  padding: 0.8em 0;
+}
+
+.primary-nav li {
+  line-height: 0;
 }
 
 .primary-nav a {
   color: var(--clr-neutral-200);
+  text-decoration: none;
 }
 
 .about {
