@@ -241,11 +241,6 @@ section {
   min-height: 50vh;
 }
 
-@media (min-width: 40rem) {
-  .primary-header {
-  }
-}
-
 .primary-nav {
   position: fixed;
   bottom: 0.5em;
@@ -270,6 +265,25 @@ section {
 .primary-nav a {
   color: var(--clr-neutral-200);
   text-decoration: none;
+}
+
+@media (min-width: 40em) {
+  .primary-nav {
+    position: static;
+    background: transparent;
+  }
+  .primary-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .primary-header__inner {
+    display: flex;
+    justify-content: space-between;
+  }
+  .primary-nav ul {
+    padding: 0;
+    gap: 2em;
+  }
 }
 
 .about {
