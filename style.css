@@ -239,6 +239,14 @@ section {
   background-color: var(--clr-primary-400);
   background-size: cover;
   min-height: 50vh;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.primary-header .container {
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .page-home .primary-header {
