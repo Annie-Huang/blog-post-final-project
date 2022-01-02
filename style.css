@@ -94,11 +94,21 @@ body {
   line-height: 1.3;
   /* Kevin's solution (he choose it because of Single Blog Post page.) I choose --ff-serif because most of the text is here is in --ff-serif */
   font-family: var(--ff-sans);
-  font-size: var(--fs-400); /* Kevin solution: choose a main font-size */
-  /*color: var(--clr-neutral-900);*/
+  /* Kevin solution: choose a main font-size */
+  font-size: var(--fs-400);
   font-weight: 300;
   padding: 1.5rem;
 }
+
+/* ///////////////
+  Utility classes
+  ////////////// */
+  
+.bg-primary-300 {
+  background-color: var(--clr-primary-300);
+  border-radius: 1rem;
+}
+
 
 /* ///////////////
   Typography
@@ -217,15 +227,6 @@ section {
 .xl-space {
   margin-top: 5rem;
 }
-
-/* ///////////////
-  Utility classes
-  ////////////// */
-
-.bg-primary-300 {
-  background-color: var(--clr-primary-300);
-  border-radius: var(--br);
-}
 /* ///////////////
   Individual sections
   ////////////// */
@@ -233,11 +234,9 @@ section {
 .primary-header {
   border-radius: var(--br);
   padding: 2rem;
-  /*background: url('img/hero.jpg') center / cover;*/
   background-color: var(--clr-primary-400);
   background-size: cover;
   min-height: 50vh;
-
   display: flex;
   flex-direction: column;
 }
@@ -256,12 +255,10 @@ section {
   background-image: url(img/hero.jpg);
   background-position: center center;
 }
+
 .page-blog .primary-header {
   background-image: url(img/blog.jpg);
   background-position: left center;
-  /* The above is the same as
-  background-position: center left;
-  */
 }
 
 .primary-nav {
@@ -338,11 +335,12 @@ section {
 }
 
 .article-preview img {
-  object-fit: cover; /* making it cover is just like background-size: cover for background image */
+  /* making it cover is just like background-size: cover for background image */
   /*object-position: center center;    <<<< center center is the default value. it is equavalent to background-position for background image */
-
+  object-fit: cover;
   height: 12.5rem;
-  width: 100%; /* To stretch the width in mobile view */
+  /* To stretch the width in mobile view */
+  width: 100%; 
 }
 
 .article-preview .info {
@@ -357,17 +355,19 @@ section {
 /* use .call-to-action form rather than .newsletter.split because call-to-action may have many forms and we want each form looks the same */
 .call-to-action form {
   margin-top: 3rem;
-  display: flex; /* do not use .split as it's not evenly divided */
+  /* do not use .split as it's not evenly divided */
+  display: flex;
   flex-direction: column;
   gap: 3rem;
-  --flow-spacer: 0.5rem;
 }
 
 /* It means we want the div within the form to grow when there is space (flex-grow: 1) and we want it to grow at the same rate no matter how big the field (flex-basis: 100%) */
 .call-to-action form > div {
-  flex-basis: 100%; /* auto is the default value. flex-basis: 0  meaning it doesn't have a starting value */
+  /* auto is the default value. flex-basis: 0  meaning it doesn't have a starting value */
+  flex-basis: 100%;
   flex-shrink: 1;
-  flex-grow: 1; /* 1 is the default value */
+  /* 1 is the default value */
+  flex-grow: 1;
 }
 
 .call-to-action input {
@@ -400,8 +400,8 @@ section {
 @media (min-width: 40em) {
   .call-to-action form {
     flex-direction: row;
-    margin-top: 2.5rem;
   }
+
   .call-to-action button {
     align-self: center;
   }
@@ -501,3 +501,5 @@ footer {
     grid-column: span 3;
   }
 }
+
+/* individual article page */
