@@ -103,12 +103,11 @@ body {
 /* ///////////////
   Utility classes
   ////////////// */
-  
+
 .bg-primary-300 {
   background-color: var(--clr-primary-300);
   border-radius: 1rem;
 }
-
 
 /* ///////////////
   Typography
@@ -261,6 +260,26 @@ section {
   background-position: left center;
 }
 
+.page-article .primary-header {
+  background-image: url(img/article.jpg);
+  background-position: left center;
+  position: relative;
+  overflow: hidden;
+}
+.page-article .primary-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 25%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.45),
+    rgba(255, 255, 255, 0)
+  );
+}
+
 .primary-nav {
   position: fixed;
   bottom: 0.5em;
@@ -340,7 +359,7 @@ section {
   object-fit: cover;
   height: 12.5rem;
   /* To stretch the width in mobile view */
-  width: 100%; 
+  width: 100%;
 }
 
 .article-preview .info {
@@ -502,4 +521,6 @@ footer {
   }
 }
 
-/* individual article page */
+/* ///////////////
+  individual article page styles
+  ////////////// */
