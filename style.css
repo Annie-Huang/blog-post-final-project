@@ -451,6 +451,7 @@ footer {
 
 .article-grid {
   display: grid;
+  gap: 3em 2em;
   grid-template-columns: repeat(6, 1fr);
 }
 
