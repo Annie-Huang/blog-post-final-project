@@ -314,10 +314,23 @@ section {
   align-items: center;
   margin: 2rem 0;
 }
+
+.secondary-navigation > a:last-child {
+  margin-left: auto;
+}
+
 .categories {
   margin: 0;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+}
+
+.categories button {
+  cursor: pointer;
+  font-size: var(--fs-200);
+  text-transform: uppercase;
+  background: transparent;
+  border: 0;
 }
 
 .article-preview h3 {
