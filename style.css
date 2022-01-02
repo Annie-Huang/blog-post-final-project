@@ -145,14 +145,21 @@ a:focus {
   font-size: var(--fs-600);
 }
 
+.article-full h3,
 .section-title {
   font-size: var(--fs-600);
   /* Kevin choose to use .section-title where as me style on h2, all .section-title is in <h2>, but guess Kevin's approach makes better sense */
   color: var(--clr-neutral-400);
 }
 
+.article-full h3 + p,
 .section-subtitle {
   font-size: var(--fs-600);
+}
+
+.article-full h3 + p {
+  font-family: var(--ff-serif);
+  margin-top: 0;
 }
 
 .btn {
