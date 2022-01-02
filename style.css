@@ -473,6 +473,7 @@ footer {
   .article-grid > .article-preview:first-child {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr min-content 1fr;
     gap: 1em;
   }
   .article-grid > .article-preview:first-child img {
