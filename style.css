@@ -384,7 +384,8 @@ section {
   bottom: var(--offset);
   left: var(--offset);
   right: var(--offset);
-  z-index: -1;
+  /* The whole link area is clickable include the .info area, but this reply on background being transparent */
+  z-index: 100;
   border-radius: var(--br);
   box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
   /* The only property you want to transition is opacity and transform, definitely not box-shadow, very back on performance.*/
