@@ -376,7 +376,7 @@ section {
   color: inherit;
 }
 
-.article-preview:hover a::before {
+.article-preview a::before {
   --offset: -1em;
   content: '';
   position: absolute;
@@ -386,6 +386,11 @@ section {
   right: var(--offset);
   z-index: -1;
   border-radius: var(--br);
+  box-shadow: 0;
+  transition: box-shadow 350ms ease;
+}
+
+.article-preview:hover a::before {
   box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
