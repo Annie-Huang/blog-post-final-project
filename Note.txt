@@ -2,3 +2,4 @@ Notes is in C:\react\blog-post
 
 http://localhost:3000
 http://localhost:3000/blog.html
+http://localhost:3000/article.html
