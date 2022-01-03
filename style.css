@@ -371,7 +371,12 @@ section {
   font-weight: var(--fw-300);
 }
 
-.article-preview a::before {
+.article-preview a:hover,
+.article-preview a:focus {
+  color: inherit;
+}
+
+.article-preview:hover a::before {
   --offset: -1em;
   content: '';
   position: absolute;
@@ -381,7 +386,7 @@ section {
   right: var(--offset);
   z-index: -1;
   border-radius: var(--br);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0.75rem 1.25rem rgba(0, 0, 0, 0.15);
 }
 
 .article-preview h3 {
