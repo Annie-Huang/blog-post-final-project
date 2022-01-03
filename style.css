@@ -372,14 +372,16 @@ section {
 }
 
 .article-preview a::before {
+  --offset: -1em;
   content: '';
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: pink;
+  top: var(--offset);
+  bottom: var(--offset);
+  left: var(--offset);
+  right: var(--offset);
   z-index: -1;
+  border-radius: var(--br);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
 }
 
 .article-preview h3 {
