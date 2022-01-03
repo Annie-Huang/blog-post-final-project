@@ -363,6 +363,20 @@ section {
   text-decoration: none;
   font-size: var(--fs-400);
   font-weight: var(--fw-300);
+  position: relative;
+  /* Create a new stacking context as long as it's higher or equal to 0 */
+  z-index: 0;
+}
+
+.article-preview a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: pink;
+  z-index: -1;
 }
 
 .article-preview h3 {
